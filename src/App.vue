@@ -1,6 +1,6 @@
 <script setup>
 import NavigationBar from './components/NavigationBar.vue';
-import Button from 'primevue/button';
+import Hero from './views/Hero.vue'
 import Card from 'primevue/card';
 </script>
 
@@ -9,17 +9,7 @@ import Card from 'primevue/card';
   <NavigationBar />
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <p class="intro-text">Hi there, I'm</p>
-      <h1 class="gradient-text">Wesly Barayuga</h1>
-      <p class="description">
-        A passionate software engineer based in Lathrop, California, crafting clean and user-friendly experiences for the web and beyond.
-      </p>
-      <Button label="View My Work" class="cta-button" />
-    </div>
-    <img src="./assets/memoji.png" class="memoji" alt="My Apple Memoji" />
-  </section>
+  <Hero />
 
   <!-- About Section -->
   <section class="about">
@@ -52,9 +42,9 @@ import Card from 'primevue/card';
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem 3rem;
-  background: #f3f4f6;
+  background: #ffffff;
   min-height: 80vh;
 }
 
@@ -90,23 +80,6 @@ import Card from 'primevue/card';
   object-fit: cover;
   object-position: 50% 45%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Call-to-Action Button */
-.cta-button {
-  background: linear-gradient(to right, #7b2ff7, #00c6fb);
-  color: #fff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* About Section */
