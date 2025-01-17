@@ -1,11 +1,18 @@
 @import './base.css';
 
+:root {
+  --container-max-width: 1480px; /* Define a reusable max-width */
+}
+
 #app {
-  max-width: 1280px; 
+  max-width: var(--container-max-width); 
   width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 0rem;
   font-weight: normal;
+  display: block;
+  grid-template-columns: 1fr 1fr;
+  background: rgb(244 244 245);
 }
 
 @media (hover: hover) {
@@ -21,8 +28,6 @@
   }
 
   #app {
-    display: block;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
   }
 }
+

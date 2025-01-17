@@ -18,7 +18,7 @@ import Card from 'primevue/card';
 <style scoped>
 .about {
   padding: 4rem 3rem;
-  background: #ffffff;
+  /*background: #ffffff;*/
 }
 
 .about-card {

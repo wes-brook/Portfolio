@@ -2,13 +2,12 @@
 import NavigationBar from './components/NavigationBar.vue';
 import Hero from './views/Hero.vue'
 import About from './views/About.vue'
-import Card from 'primevue/card';
 </script>
 
 <template>
   <!-- Navigation Bar -->
   <NavigationBar />
-
+  
   <!-- Hero Section -->
   <Hero />
 

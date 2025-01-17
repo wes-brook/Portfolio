@@ -3,14 +3,14 @@
 
 <template>
     <section class="hero">
-    <div class="hero-content">
-      <p class="intro-text">Hi there, I'm</p>
-      <h1 class="gradient-text">Wesly Barayuga</h1>
-      <p class="description">
-        A software engineer, ui/ux designer, problem-solver, and forever fitness enthusiast. 
-      </p>
-      <button label="View My Work" class="cta-button">View My Work</button>
-    </div>
+        <div class="hero-content">
+          <p class="intro-text">Hi there, I'm</p>
+          <h1 class="gradient-text">Wesly Barayuga</h1>
+          <p class="description">
+            A software engineer, ui/ux designer, problem-solver, and forever fitness enthusiast. 
+          </p>
+          <button label="View My Work" class="cta-button">View My Work</button>
+        </div>
     <img src="../assets/memoji.png" class="memoji" alt="My Apple Memoji" />
   </section>
 </template>
@@ -21,23 +21,22 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 2rem 3rem;
   min-height: 80vh;
-  background: radial-gradient(
+  /*background: radial-gradient(
     circle,
     rgba(115, 12, 50, 1) 5%,
     rgba(13, 12, 12, 1) 60%
-  );
-
+  );*/
+  /*background: #ffffff;*/
 }
 
 .hero-content {
-  max-width: 47%;
+    max-width: 47%;
 }
 
 .intro-text {
   font-size: 2.25rem;
-  color: #ffffff;
+  
 }
 
 .gradient-text {
@@ -52,7 +51,6 @@
 
 .description {
   font-size: 1.5rem;
-  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
@@ -91,6 +89,7 @@ TODO:
 1. Add dropshadow from the top-down of the navbar
 2. Add glassmorphism to navbar
 3. Make all text have a subtle layover transition animation on page load
+    - src: https://markhorn.dev/
 4. Make dark mode button work
 5. Develop pages: project, resume, contact
     - These will all be their own seperate pages from the main page
