@@ -1,5 +1,4 @@
 <script setup>
-import Button from 'primevue/button';
 </script>
 
 <template>
@@ -8,7 +7,7 @@ import Button from 'primevue/button';
       <p class="intro-text">Hi there, I'm</p>
       <h1 class="gradient-text">Wesly Barayuga</h1>
       <p class="description">
-        A passionate software engineer based in Lathrop, California, crafting clean and user-friendly experiences for the web and beyond.
+        A software engineer, ui/ux designer, problem-solver, and forever fitness enthusiast. 
       </p>
       <button label="View My Work" class="cta-button">View My Work</button>
     </div>
@@ -86,3 +85,14 @@ import Button from 'primevue/button';
 }
 
 </style>
+
+<!--
+TODO:
+1. Add dropshadow from the top-down of the navbar
+2. Add glassmorphism to navbar
+3. Make all text have a subtle layover transition animation on page load
+4. Make dark mode button work
+5. Develop pages: project, resume, contact
+    - These will all be their own seperate pages from the main page
+6...
+-->
