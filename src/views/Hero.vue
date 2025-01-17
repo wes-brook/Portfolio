@@ -24,7 +24,12 @@ import Button from 'primevue/button';
   justify-content: center;
   padding: 2rem 3rem;
   min-height: 80vh;
-  background: #ffffff;
+  background: radial-gradient(
+    circle,
+    rgba(115, 12, 50, 1) 5%,
+    rgba(13, 12, 12, 1) 60%
+  );
+
 }
 
 .hero-content {
@@ -33,7 +38,7 @@ import Button from 'primevue/button';
 
 .intro-text {
   font-size: 2.25rem;
-  color: #6b7280;
+  color: #ffffff;
 }
 
 .gradient-text {
@@ -48,7 +53,7 @@ import Button from 'primevue/button';
 
 .description {
   font-size: 1.5rem;
-  color: #374151;
+  color: #ffffff;
   margin-bottom: 1.5rem;
 }
 
