@@ -51,7 +51,7 @@ const scrollToTop = () => {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(250, 250, 250); 
     z-index: 1000; 
 }
 
@@ -61,7 +61,7 @@ const scrollToTop = () => {
     align-items: center;
     width: 100%;
     max-width: 1200px; 
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(250, 250, 250); 
     padding: 0 1rem;
     margin: 0 auto;
     border: none;
@@ -75,7 +75,7 @@ const scrollToTop = () => {
     display: flex;
     align-items: center;
     border: none;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(250, 250, 250); 
 }
 
 .clickable {

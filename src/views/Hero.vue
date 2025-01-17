@@ -10,7 +10,7 @@ import Button from 'primevue/button';
       <p class="description">
         A passionate software engineer based in Lathrop, California, crafting clean and user-friendly experiences for the web and beyond.
       </p>
-      <Button label="View My Work" class="cta-button" />
+      <button label="View My Work" class="cta-button">View My Work</button>
     </div>
     <img src="../assets/memoji.png" class="memoji" alt="My Apple Memoji" />
   </section>
