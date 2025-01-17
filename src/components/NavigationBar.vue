@@ -1,61 +1,70 @@
 <script setup>
 import Menubar from 'primevue/menubar';
+import 'primeicons/primeicons.css'
 import { ref } from "vue";
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
 
 const items = ref([
     {
         label: 'Projects',
-        command: () => {
-            router.push('/projects');
-        }
-    },
+   },
     {
         label: 'Resume',
-        command: () => {
-            router.push('/resume');
-        }
     },
     {
         label: 'Contact',
-        command: () => {
-            router.push('/contact');
-        }
     },
-    {
-        label: 'Dark Mode',
-    }
 ]);
+
+const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'instant'
+    });
+};
 </script>
 
 <template>
-    <Menubar class="menubar">
-        <!-- Left-aligned content -->
-        <template #start class="menubar-start">
-            <span 
-                class="font-bold text-lg cursor-pointer"
-                @click="router.push('/')"
-            >
-                WB
-            </span>
-        </template>
+    <div class="navbar-wrapper">
+        <Menubar class="menubar">
+            <!-- Left-aligned content -->
+            <template #start class="menubar-start">
+                <span class="font-bold text-lg clickable" @click="scrollToTop">
+                    WB
+                </span>
+            </template>
 
-        <!-- Right-aligned content -->
-        <template #end class="menubar-end"> 
-            <Menubar :model="items" />
-        </template>
-    </Menubar>
+            <!-- Right-aligned content -->
+            <template #end>
+                <div class="menubar-end">
+                    <Menubar :model="items" class="menubar-end"/>
+                    <span class="pi pi-sun" style="margin: 0.5rem"/>
+                </div>
+            </template>
+        </Menubar>
+    </div>
 </template>
 
 <style scoped>
+.navbar-wrapper {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255); 
+    z-index: 1000; 
+}
+
 .menubar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 1200px; 
+    background-color: rgb(255, 255, 255); 
     padding: 0 1rem;
+    margin: 0 auto;
+    border: none;
 }
 
 .menubar-start {
@@ -63,8 +72,13 @@ const items = ref([
 }
 
 .menubar-end {
-    flex: 1;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    background-color: rgb(255, 255, 255); 
+}
+
+.clickable {
+    cursor: pointer;
 }
 </style>
